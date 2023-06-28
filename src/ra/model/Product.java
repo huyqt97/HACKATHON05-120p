@@ -4,9 +4,9 @@ public class Product {
     private String productId; // id sản phẩm
     private String productName; // tên sản phẩm
     private String description; // miêu tả sản phẩm
-    private int stock; // ...
-    private Catalog catalog;
-    private boolean status;
+    private int stock; // giá
+    private Catalog catalog; // mục lục
+    private boolean status;// tình trạng sản phẩm
 
     public Product() {
     }
@@ -18,6 +18,9 @@ public class Product {
         this.stock = stock;
         this.catalog = catalog;
         this.status = status;
+    }
+
+    public Product(String productId, String productName, double productPrice, String description, int stock, Catalog catalog, boolean status) {
     }
 
     public String getProductId() {
@@ -78,5 +81,12 @@ public class Product {
                 ", catalog=" + catalog +
                 ", status=" + (status? "còn hàng":"hết hàng") +
                 '}';
+    }
+
+    public void setProductPrice(double newPrice) {
+    }
+
+    public static <T> double getProductPrice(T t) {
+        return 0;
     }
 }
