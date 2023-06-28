@@ -55,7 +55,7 @@ public class cartltemService {
             int stock = product.getStock();
             if (quantity > 0 && quantity <= stock) {
                 CartItem cart = new CartItem(productId, product.getStock(), quantity);
-                cartltemService.addCart(cart);
+//                cartltemService.addCart(cart);
                 System.out.println("Sản phẩm đã được thêm vào giỏ hàng.");
             } else {
                 System.out.println("Số lượng sản phẩm không khả dụng.");
